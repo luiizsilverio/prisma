@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
   },
   "author": "Luiz Oliveira <luiiz.silverio@gmail.com>",
   "license": "MIT",
@@ -12,10 +13,11 @@
     "@types/express": "^4.17.13",
     "@types/node": "^17.0.23",
     "prisma": "^3.12.0",
-    "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "@prisma/client": "^3.12.0",
     "express": "^4.17.3"
   }
 }
